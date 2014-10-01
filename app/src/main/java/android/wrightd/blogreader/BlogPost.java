@@ -1,5 +1,7 @@
 package android.wrightd.blogreader;
 
+// no Milestone 7 code added, just reading about asyncTask
+
 public class BlogPost {
     public final String title;
     public final String url;
