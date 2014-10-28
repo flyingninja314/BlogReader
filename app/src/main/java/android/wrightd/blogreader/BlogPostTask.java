@@ -3,7 +3,7 @@ package android.wrightd.blogreader;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.ArrayAdapter;
+//import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import org.json.JSONObject;
@@ -22,7 +22,7 @@ public class BlogPostTask extends AsyncTask<Activity, Void, JSONObject> {
         JSONObject jsonObject = null;
         try {
             URL blogFeedURL = new URL("http://blog.teamtreehouse.com/api/get_recent_summary/?count=20");
-
+//            getting the JSON object from the website
             HttpURLConnection connection = (HttpURLConnection)blogFeedURL.openConnection();
             connection.connect();
             int responseCode = connection.getResponseCode();

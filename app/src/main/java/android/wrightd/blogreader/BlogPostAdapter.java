@@ -22,7 +22,18 @@ public class BlogPostAdapter extends ArrayAdapter<BlogPost> {
         if(convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
         }
+        /*
+            sets up the layout of the application -> shows the blog posts as :
+            ------------
+            (Blog Post 1)
+            ------------
+            (Blog Post 2)
+            ------------
+            (Blog Post 3)
+            ------------
 
+            and so on and so on and so on........
+        */
         TextView textView = (TextView)convertView.findViewById(android.R.id.text1);
         textView.setText(post.title);
 

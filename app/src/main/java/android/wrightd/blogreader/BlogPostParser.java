@@ -34,6 +34,7 @@ public class BlogPostParser {
         JSONObject jsonObject = null;
 
         String line;
+//        getting JSON objects and shiz
 
         try {
             while ((line = reader.readLine()) != null) {
@@ -58,7 +59,7 @@ public class BlogPostParser {
 
             for(int index = 0; index < jsonPosts.length(); index ++) {
                 JSONObject post = jsonPosts.getJSONObject(index);
-
+//                ayyyyy JSON objects to getting titles and urls (in a loooooooop)
                 String title = post.getString("title");
                 String url = post.getString("url");
 
